@@ -37,6 +37,7 @@ to know any of this.
       - ipython
       - numpy
       - scipy
+      - scikit-image
       - pip:
           - git+https://github.com/zplab/freeimage-py
           - git+https://github.com/zplab/zplib
@@ -47,7 +48,7 @@ to know any of this.
   conda update conda
   
   conda env update -n myenv -f user_env.yml
-  pip install celiagg --global-option=--no-text-rendering
+  
   
   rm user_env.yml
   ```
@@ -55,7 +56,10 @@ to know any of this.
   ```
   conda activate myenv
   ```
-
+- Install celiagg (Whatever that is) (Requires numpy be installed) 
+```
+pip install celiagg --global-option=--no-text-rendering
+```
 **NOTE:** if you ever need to update to the latest version of zplab-specific libraries, run lines like the following:
   ```
   pip install --upgrade git+https://github.com/zplab/freeimage-py
